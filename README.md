@@ -1,6 +1,5 @@
 # 🩺 Struct — Unstructured Clinical Note → HL7 FHIR JSON Extractor
 
-[![CI](https://github.com/aj-elyoussef/struct-fhir-extractor/actions/workflows/ci.yml/badge.svg)](https://github.com/aj-elyoussef/struct-fhir-extractor/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![FHIR](https://img.shields.io/badge/HL7%20FHIR-R4-red)
 ![License](https://img.shields.io/badge/license-MIT-green)
