@@ -1,6 +1,6 @@
 # 🩺 Struct — Unstructured Clinical Note → HL7 FHIR JSON Extractor
 
-[![CI](https://github.com/YOUR-USERNAME/struct-fhir-extractor/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/struct-fhir-extractor/actions/workflows/ci.yml)
+[![CI](https://github.com/aj-elyoussef/struct-fhir-extractor/actions/workflows/ci.yml/badge.svg)](https://github.com/aj-elyoussef/struct-fhir-extractor/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![FHIR](https://img.shields.io/badge/HL7%20FHIR-R4-red)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -44,8 +44,8 @@ flowchart LR
 
 1. **Forced tool use.** The Pydantic schema is converted to JSON Schema and registered as the *only* tool; `tool_choice` forces Claude to call it, so free-text replies are impossible.
 2. **Strict validation.** Enums (FHIR `AdministrativeGender`, `condition-ver-status`), regex-checked ICD-10-CM and RxNorm codes, numeric bounds, and `extra="forbid"` to reject invented fields.
-3. **Evidence grounding.** Every symptom, diagnosis and medication must carry a verbatim `evidence` quote. A deterministic check confirms the quote exists in the note, which catches hallucinated facts.
-4. **Self-repair loop.** On any failure the precise validation errors are returned to Claude as an `is_error` tool result, and it corrects itself (bounded retries, default 2).
+3. **Evidence grounding.** Every symptom, diagnosis and medication must carry a verbatim `evidence` quote. A deterministic check confirms the quote appears in the note, catching hallucinated facts.
+4. **Self-repair loop.** On any failure, the precise validation errors are returned to Claude as an `is_error` tool result, and it corrects itself (bounded retries, default 2).
 5. **Deterministic FHIR mapping.** The validated object is mapped to FHIR in plain Python. Resource IDs are UUIDv5 values derived from a hash of the note, so the same input always produces the same Bundle.
 6. **Prompt-injection hygiene.** The note is wrapped in `<clinical_note>` tags and treated as untrusted data.
 
@@ -66,7 +66,7 @@ flowchart LR
 ## 🚀 Quick start
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/struct-fhir-extractor.git
+git clone https://github.com/aj-elyoussef/struct-fhir-extractor.git
 cd struct-fhir-extractor
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -169,7 +169,7 @@ Python · Anthropic SDK (Claude tool use) · Pydantic v2 · Streamlit · pandas 
 
 ## 👤 Author
 
-**Ahmad Jamal El-Youssef** — Independent Researcher
+**Ahmad Jamal El-Youssef** — AI Engineer
 
 ## 📄 License
 
