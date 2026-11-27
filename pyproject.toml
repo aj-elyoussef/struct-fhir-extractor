@@ -1,0 +1,35 @@
+[project]
+name = "struct-fhir"
+version = "1.0.0"
+description = "Convert unstructured clinical notes into validated HL7 FHIR R4 JSON using Claude tool use and Pydantic."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ahmad Jamal El-Youssef" }]
+dependencies = ["anthropic>=0.40", "pydantic>=2.7"]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.36", "pandas>=2.0"]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+struct-fhir = "struct_fhir.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

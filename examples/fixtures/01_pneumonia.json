@@ -1,0 +1,18 @@
+{
+  "patient": {"full_name": "John A. Carter", "gender": "male", "age_years": 58, "birth_date": null, "mrn": "00482913"},
+  "symptoms": [
+    {"name": "productive cough", "present": true, "onset": "5 days", "severity": null, "evidence": "productive cough x 5 days w/ yellow sputum"},
+    {"name": "fever", "present": true, "onset": null, "severity": "up to 38.9 C at home", "evidence": "fevers to 38.9 at home"},
+    {"name": "shortness of breath on exertion", "present": true, "onset": null, "severity": null, "evidence": "SOB on exertion"},
+    {"name": "chest pain", "present": false, "onset": null, "severity": null, "evidence": "Denies chest pain"}
+  ],
+  "diagnoses": [
+    {"name": "Community-acquired pneumonia, right lower lobe", "status": "confirmed", "icd10_code": "J18.9", "evidence": "Community-acquired pneumonia, RLL"},
+    {"name": "Type 2 diabetes mellitus", "status": "confirmed", "icd10_code": "E11.9", "evidence": "T2DM - stable"}
+  ],
+  "medications": [
+    {"name": "amoxicillin", "dose": "1 g", "route": "oral", "frequency": "three times daily (TDS)", "duration": "7 days", "rxnorm_code": "723", "newly_prescribed": true, "evidence": "amoxicillin 1 g PO TDS for 7 days"},
+    {"name": "metformin", "dose": "1000 mg", "route": "oral", "frequency": "twice daily (BD)", "duration": null, "rxnorm_code": "6809", "newly_prescribed": false, "evidence": "Continue metformin 1000mg BD"},
+    {"name": "paracetamol", "dose": "1 g", "route": "oral", "frequency": "four times daily as needed for fever (QID PRN)", "duration": null, "rxnorm_code": "161", "newly_prescribed": true, "evidence": "Paracetamol 1g PO QID PRN fever"}
+  ]
+}

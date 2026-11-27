@@ -1,0 +1,392 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "timestamp": "2026-11-27T01:44:05+00:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "96c540e8-e387-5a88-8dd3-665c33306790",
+        "identifier": [
+          {
+            "system": "urn:struct:mrn",
+            "value": "00482913"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "John A. Carter",
+            "family": "Carter",
+            "given": [
+              "John",
+              "A."
+            ]
+          }
+        ],
+        "gender": "male",
+        "extension": [
+          {
+            "url": "https://github.com/struct-fhir/StructureDefinition/stated-age",
+            "valueInteger": 58
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7343bc23-19d2-52fc-ac7f-ff9d136beac5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7343bc23-19d2-52fc-ac7f-ff9d136beac5",
+        "status": "preliminary",
+        "code": {
+          "text": "productive cough"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"productive cough x 5 days w/ yellow sputum\""
+          },
+          {
+            "text": "onset: 5 days"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fae55c3b-297f-5d56-a173-a00b570a8684",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fae55c3b-297f-5d56-a173-a00b570a8684",
+        "status": "preliminary",
+        "code": {
+          "text": "fever"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"fevers to 38.9 at home\""
+          },
+          {
+            "text": "severity: up to 38.9 C at home"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:948948a0-649f-5cea-b98b-036116c43d6f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "948948a0-649f-5cea-b98b-036116c43d6f",
+        "status": "preliminary",
+        "code": {
+          "text": "shortness of breath on exertion"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"SOB on exertion\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:240d3ffc-ca4f-5a36-b945-db0e40c50b75",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "240d3ffc-ca4f-5a36-b945-db0e40c50b75",
+        "status": "preliminary",
+        "code": {
+          "text": "chest pain"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Source: \"Denies chest pain\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4ae1e334-207e-5ccd-8925-28c2d6304cc1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4ae1e334-207e-5ccd-8925-28c2d6304cc1",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "J18.9",
+              "display": "Community-acquired pneumonia, right lower lobe"
+            }
+          ],
+          "text": "Community-acquired pneumonia, right lower lobe"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "note": [
+          {
+            "text": "Source: \"Community-acquired pneumonia, RLL\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:48e09df1-9b1b-58c0-8c8b-6fb5ec777a64",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "48e09df1-9b1b-58c0-8c8b-6fb5ec777a64",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E11.9",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 diabetes mellitus"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "note": [
+          {
+            "text": "Source: \"T2DM - stable\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bf32497d-51f5-53e1-aead-27bbddaca4f9",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "bf32497d-51f5-53e1-aead-27bbddaca4f9",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "723",
+              "display": "amoxicillin"
+            }
+          ],
+          "text": "amoxicillin"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 g three times daily (TDS) for 7 days",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "oral"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"amoxicillin 1 g PO TDS for 7 days\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9ea89d06-ba0b-5636-ad44-14892afd498f",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "9ea89d06-ba0b-5636-ad44-14892afd498f",
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "6809",
+              "display": "metformin"
+            }
+          ],
+          "text": "metformin"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "dosageInstruction": [
+          {
+            "text": "1000 mg twice daily (BD)",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "oral"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"Continue metformin 1000mg BD\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:807ee512-98cb-5313-a448-7cdb923297ea",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "807ee512-98cb-5313-a448-7cdb923297ea",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "161",
+              "display": "paracetamol"
+            }
+          ],
+          "text": "paracetamol"
+        },
+        "subject": {
+          "reference": "urn:uuid:96c540e8-e387-5a88-8dd3-665c33306790"
+        },
+        "dosageInstruction": [
+          {
+            "text": "1 g four times daily as needed for fever (QID PRN)",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "oral"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"Paracetamol 1g PO QID PRN fever\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    }
+  ]
+}

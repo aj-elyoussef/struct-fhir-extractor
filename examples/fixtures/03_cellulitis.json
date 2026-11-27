@@ -1,0 +1,20 @@
+{
+  "patient": {"full_name": "Margaret O'Brien", "gender": "female", "age_years": 72, "birth_date": null, "mrn": null},
+  "symptoms": [
+    {"name": "left lower leg redness, warmth and swelling", "present": true, "onset": "since yesterday", "severity": "spreading", "evidence": "Red, hot, swollen L lower leg"},
+    {"name": "leg pain", "present": true, "onset": null, "severity": "6/10", "evidence": "painful 6/10"},
+    {"name": "low-grade fever", "present": true, "onset": null, "severity": "37.9 C", "evidence": "Low grade temp 37.9"},
+    {"name": "calf tenderness", "present": false, "onset": null, "severity": null, "evidence": "No calf tenderness"}
+  ],
+  "diagnoses": [
+    {"name": "Cellulitis of left lower limb", "status": "confirmed", "icd10_code": "L03.116", "evidence": "Cellulitis L lower leg"},
+    {"name": "Deep vein thrombosis", "status": "refuted", "icd10_code": null, "evidence": "DVT excluded"},
+    {"name": "Atrial fibrillation", "status": "confirmed", "icd10_code": "I48.91", "evidence": "AF on apixaban 5mg BD"},
+    {"name": "Hypertension", "status": "confirmed", "icd10_code": "I10", "evidence": "HTN on perindopril 5 mg daily"}
+  ],
+  "medications": [
+    {"name": "cephalexin", "dose": "500 mg", "route": "oral", "frequency": "four times daily (QID)", "duration": "5 days", "rxnorm_code": "2231", "newly_prescribed": true, "evidence": "cephalexin 500mg PO QID x 5/7"},
+    {"name": "apixaban", "dose": "5 mg", "route": null, "frequency": "twice daily (BD)", "duration": null, "rxnorm_code": "1364430", "newly_prescribed": false, "evidence": "apixaban 5mg BD"},
+    {"name": "perindopril", "dose": "5 mg", "route": null, "frequency": "daily", "duration": null, "rxnorm_code": null, "newly_prescribed": false, "evidence": "perindopril 5 mg daily"}
+  ]
+}

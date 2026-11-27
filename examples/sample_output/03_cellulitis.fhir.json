@@ -1,0 +1,456 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "timestamp": "2026-11-27T01:44:05+00:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "76570f81-a1f7-5588-bb59-5f781c8a3ae8",
+        "name": [
+          {
+            "use": "official",
+            "text": "Margaret O'Brien",
+            "family": "O'Brien",
+            "given": [
+              "Margaret"
+            ]
+          }
+        ],
+        "gender": "female",
+        "extension": [
+          {
+            "url": "https://github.com/struct-fhir/StructureDefinition/stated-age",
+            "valueInteger": 72
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6f6eb6f4-d347-55d6-8977-7d700feb191a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6f6eb6f4-d347-55d6-8977-7d700feb191a",
+        "status": "preliminary",
+        "code": {
+          "text": "left lower leg redness, warmth and swelling"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"Red, hot, swollen L lower leg\""
+          },
+          {
+            "text": "onset: since yesterday, severity: spreading"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:25265f7a-183e-5f35-912e-901ad87d1621",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "25265f7a-183e-5f35-912e-901ad87d1621",
+        "status": "preliminary",
+        "code": {
+          "text": "leg pain"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"painful 6/10\""
+          },
+          {
+            "text": "severity: 6/10"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a1979edb-480a-5a28-8786-1deaeceb0bff",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a1979edb-480a-5a28-8786-1deaeceb0bff",
+        "status": "preliminary",
+        "code": {
+          "text": "low-grade fever"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"Low grade temp 37.9\""
+          },
+          {
+            "text": "severity: 37.9 C"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9a8a97cc-adce-5546-a68c-19947b25d110",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9a8a97cc-adce-5546-a68c-19947b25d110",
+        "status": "preliminary",
+        "code": {
+          "text": "calf tenderness"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Source: \"No calf tenderness\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8f43e7e-0eca-59b3-ac1e-c95153e00944",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a8f43e7e-0eca-59b3-ac1e-c95153e00944",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "L03.116",
+              "display": "Cellulitis of left lower limb"
+            }
+          ],
+          "text": "Cellulitis of left lower limb"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "note": [
+          {
+            "text": "Source: \"Cellulitis L lower leg\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fb05ec02-a246-5ef6-91fe-9f052be022cb",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "fb05ec02-a246-5ef6-91fe-9f052be022cb",
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "refuted"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Deep vein thrombosis"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "note": [
+          {
+            "text": "Source: \"DVT excluded\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4d3d1c3b-d8b6-5f01-9aae-4627e0a5f6c2",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4d3d1c3b-d8b6-5f01-9aae-4627e0a5f6c2",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I48.91",
+              "display": "Atrial fibrillation"
+            }
+          ],
+          "text": "Atrial fibrillation"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "note": [
+          {
+            "text": "Source: \"AF on apixaban 5mg BD\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8f308c5c-4677-5ad6-a20a-f28ffd5fbac8",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8f308c5c-4677-5ad6-a20a-f28ffd5fbac8",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "I10",
+              "display": "Hypertension"
+            }
+          ],
+          "text": "Hypertension"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "note": [
+          {
+            "text": "Source: \"HTN on perindopril 5 mg daily\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a70b03b0-582a-5dcd-a67e-e69aff6eff52",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "a70b03b0-582a-5dcd-a67e-e69aff6eff52",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "2231",
+              "display": "cephalexin"
+            }
+          ],
+          "text": "cephalexin"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "dosageInstruction": [
+          {
+            "text": "500 mg four times daily (QID) for 5 days",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "oral"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"cephalexin 500mg PO QID x 5/7\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8b00b231-2419-5da3-bd34-33a1bdec5951",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "8b00b231-2419-5da3-bd34-33a1bdec5951",
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1364430",
+              "display": "apixaban"
+            }
+          ],
+          "text": "apixaban"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "dosageInstruction": [
+          {
+            "text": "5 mg twice daily (BD)"
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"apixaban 5mg BD\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a41ab9bf-8b0c-5824-b342-1bc8e94e75dd",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "a41ab9bf-8b0c-5824-b342-1bc8e94e75dd",
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "text": "perindopril"
+        },
+        "subject": {
+          "reference": "urn:uuid:76570f81-a1f7-5588-bb59-5f781c8a3ae8"
+        },
+        "dosageInstruction": [
+          {
+            "text": "5 mg daily"
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"perindopril 5 mg daily\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    }
+  ]
+}

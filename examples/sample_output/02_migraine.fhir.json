@@ -1,0 +1,454 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "timestamp": "2026-11-27T01:44:05+00:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "af67b816-fa57-557c-b0c9-a51bd8e1fb85",
+        "identifier": [
+          {
+            "system": "urn:struct:mrn",
+            "value": "77310245"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Priya Nair",
+            "family": "Nair",
+            "given": [
+              "Priya"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1991-03-07",
+        "extension": [
+          {
+            "url": "https://github.com/struct-fhir/StructureDefinition/stated-age",
+            "valueInteger": 35
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ee7f1eba-67fe-5b9f-ac41-4a4d0f2c7f80",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ee7f1eba-67fe-5b9f-ac41-4a4d0f2c7f80",
+        "status": "preliminary",
+        "code": {
+          "text": "throbbing unilateral headache"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"recurrent throbbing unilateral headache\""
+          },
+          {
+            "text": "onset: past 2 months, ~3x/week, severity: 7/10"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f0e5ca95-e969-51c9-bdc2-9b8ec937b39b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f0e5ca95-e969-51c9-bdc2-9b8ec937b39b",
+        "status": "preliminary",
+        "code": {
+          "text": "photophobia"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"photophobia\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2353263c-c351-58a4-97ae-44920a7fcd1f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2353263c-c351-58a4-97ae-44920a7fcd1f",
+        "status": "preliminary",
+        "code": {
+          "text": "nausea"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"nausea\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7637d15c-14bd-5058-9cde-f0849d4507bf",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7637d15c-14bd-5058-9cde-f0849d4507bf",
+        "status": "preliminary",
+        "code": {
+          "text": "visual aura"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Source: \"No visual aura\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bc5cc194-f37d-515b-a12a-d16c3982d456",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bc5cc194-f37d-515b-a12a-d16c3982d456",
+        "status": "preliminary",
+        "code": {
+          "text": "weakness"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Source: \"No weakness or numbness\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:41e1ccb0-12f8-5061-90a7-e09b808d2056",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "41e1ccb0-12f8-5061-90a7-e09b808d2056",
+        "status": "preliminary",
+        "code": {
+          "text": "numbness"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "valueBoolean": false,
+        "note": [
+          {
+            "text": "Source: \"No weakness or numbness\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:da251eb0-2bbc-52a1-892d-ff2c39f81069",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "da251eb0-2bbc-52a1-892d-ff2c39f81069",
+        "status": "preliminary",
+        "code": {
+          "text": "poor sleep"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "valueBoolean": true,
+        "note": [
+          {
+            "text": "Source: \"Sleep poor lately\""
+          },
+          {
+            "text": "onset: lately"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:777cc18e-2c59-5c8c-94b7-91ee6bf2f086",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "777cc18e-2c59-5c8c-94b7-91ee6bf2f086",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "G43.009",
+              "display": "Migraine without aura"
+            }
+          ],
+          "text": "Migraine without aura"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "note": [
+          {
+            "text": "Source: \"Migraine without aura\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7aa84234-f013-5d41-a8d0-03f57b0d57db",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "7aa84234-f013-5d41-a8d0-03f57b0d57db",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "provisional"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "G44.41",
+              "display": "Medication overuse headache"
+            }
+          ],
+          "text": "Medication overuse headache"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "note": [
+          {
+            "text": "Source: \"?medication overuse headache\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fd704e6b-a8f6-5d3b-95e9-2e8b8bcd2d1a",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "fd704e6b-a8f6-5d3b-95e9-2e8b8bcd2d1a",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "8787",
+              "display": "propranolol"
+            }
+          ],
+          "text": "propranolol"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "dosageInstruction": [
+          {
+            "text": "40 mg twice daily (BD)",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "oral"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"propranolol 40 mg oral BD\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f58ddecf-10f0-5dc6-b85c-8739e26b4243",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "f58ddecf-10f0-5dc6-b85c-8739e26b4243",
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "37418",
+              "display": "sumatriptan"
+            }
+          ],
+          "text": "sumatriptan"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "dosageInstruction": [
+          {
+            "text": "50 mg at onset, may repeat after 2h, max 2 doses/24h",
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "oral"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"Sumatriptan 50mg PO at onset\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8db1fc4a-eae6-5002-9126-cd42ac76aee3",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "8db1fc4a-eae6-5002-9126-cd42ac76aee3",
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "5640",
+              "display": "ibuprofen"
+            }
+          ],
+          "text": "ibuprofen"
+        },
+        "subject": {
+          "reference": "urn:uuid:af67b816-fa57-557c-b0c9-a51bd8e1fb85"
+        },
+        "dosageInstruction": [
+          {
+            "text": "most days (to be reduced)"
+          }
+        ],
+        "note": [
+          {
+            "text": "Source: \"taking ibuprofen most days\""
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "MedicationRequest"
+      }
+    }
+  ]
+}

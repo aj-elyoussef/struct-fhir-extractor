@@ -1,0 +1,21 @@
+{
+  "patient": {"full_name": "Priya Nair", "gender": "female", "age_years": 35, "birth_date": "1991-03-07", "mrn": "77310245"},
+  "symptoms": [
+    {"name": "throbbing unilateral headache", "present": true, "onset": "past 2 months, ~3x/week", "severity": "7/10", "evidence": "recurrent throbbing unilateral headache"},
+    {"name": "photophobia", "present": true, "onset": null, "severity": null, "evidence": "photophobia"},
+    {"name": "nausea", "present": true, "onset": null, "severity": null, "evidence": "nausea"},
+    {"name": "visual aura", "present": false, "onset": null, "severity": null, "evidence": "No visual aura"},
+    {"name": "weakness", "present": false, "onset": null, "severity": null, "evidence": "No weakness or numbness"},
+    {"name": "numbness", "present": false, "onset": null, "severity": null, "evidence": "No weakness or numbness"},
+    {"name": "poor sleep", "present": true, "onset": "lately", "severity": null, "evidence": "Sleep poor lately"}
+  ],
+  "diagnoses": [
+    {"name": "Migraine without aura", "status": "confirmed", "icd10_code": "G43.009", "evidence": "Migraine without aura"},
+    {"name": "Medication overuse headache", "status": "provisional", "icd10_code": "G44.41", "evidence": "?medication overuse headache"}
+  ],
+  "medications": [
+    {"name": "propranolol", "dose": "40 mg", "route": "oral", "frequency": "twice daily (BD)", "duration": null, "rxnorm_code": "8787", "newly_prescribed": true, "evidence": "propranolol 40 mg oral BD"},
+    {"name": "sumatriptan", "dose": "50 mg", "route": "oral", "frequency": "at onset, may repeat after 2h, max 2 doses/24h", "duration": null, "rxnorm_code": "37418", "newly_prescribed": true, "evidence": "Sumatriptan 50mg PO at onset"},
+    {"name": "ibuprofen", "dose": null, "route": null, "frequency": "most days (to be reduced)", "duration": null, "rxnorm_code": "5640", "newly_prescribed": false, "evidence": "taking ibuprofen most days"}
+  ]
+}
